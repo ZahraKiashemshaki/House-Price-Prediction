@@ -48,6 +48,26 @@ The dataset contains multiple variables that capture the features of the house a
 
 ---
 
+## Model Implementation
+
+### 1. **Data Preprocessing**
+   Features were standardized using Z-score scaling to ensure consistent scaling across all features, which enhances the performance and stability of the Gradient Descent optimization process.
+
+### 2. **Gradient Descent for Linear Regression**
+   The model was trained using Gradient Descent, an optimization technique that iteratively updates model parameters to minimize the cost function. To improve model performance and avoid overfitting, the learning rate and number of iterations were carefully tuned.
+
+### 3. **Regularization**
+   To prevent overfitting, both **L1 (Lasso)** and **L2 (Ridge)** regularization techniques were applied:
+   - **L1 Regularization (Lasso)**: Encourages sparsity in the model by adding a penalty proportional to the absolute values of the parameters.
+   - **L2 Regularization (Ridge)**: Controls the magnitude of the model parameters by penalizing the squared values of the coefficients.
+
+### 4. **Statistical Analysis**
+   Statistical tests, including the **Pearson correlation coefficient**, were employed to assess the relationships between features and the target variable. The p-value was used to determine statistical significance, with a threshold of 0.05 to evaluate if the correlations were meaningful.
+
+### 5. **Model Performance and Tuning**
+   The model's performance was evaluated using the optimized parameters from Gradient Descent, with adjustments to key hyperparameters to balance model accuracy and prevent overfitting. Statistical analysis further validated the significance of the features used in the model.
+
+---
 ### **2. Exploratory Data Analysis (EDA)**
 
 #### **Visualizations**:
